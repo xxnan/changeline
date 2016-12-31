@@ -15,7 +15,7 @@ import java.util.List;
 public class ChangeLine extends ViewGroup {
     private static final int LEFT=0;
     private static final int RIGHT=1;
-    private int orientation=LEFT;
+    private int orientation=RIGHT;
     public ChangeLine(Context context) {
         super(context);
 //        init(context, null);
