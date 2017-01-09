@@ -1,1 +1,45 @@
-×Ô¶¯»»ĞĞ£¬¿ÉÒÔÑ¡Ôñ´Ó×ó»¹ÊÇ´ÓÓÒ¿ªÊ¼£¬²Î¿¼ºèÑóµÄFlowLayout
+dependencies {
+æ·»åŠ compile 'com.vanke.changeline:changeline:2.0.0'
+}
+style.xml
+å®šä¹‰æ–¹å‘ï¼Œä»å·¦è¾¹è¿˜æ˜¯å³è¾¹
+<resources>
+    <declare-styleable name="direction">
+        <attr name="direct" format="integer" />
+    </declare-styleable>
+</resources>
+
+
+layout.xml
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:xxnan="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+    <com.vanke.changeline.ChangeLine
+        android:id="@+id/changeLine"
+        xxnan:direct="1"//0ä»£è¡¨å·¦è¾¹å¼€å§‹ï¼Œ1ä»£è¡¨å³è¾¹å¼€å§‹
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+		 <TextView
+            style="@style/text_flag"
+            android:text="facebook" />
+			 <TextView
+            style="@style/text_flag"
+            android:text="facebook" />
+			.....
+			.....
+			.....
+ </com.vanke.changeline.ChangeLine>
+
+</LinearLayout>
+
+
+
