@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="direction">
+        <attr name="direct" format="integer" />
+    </declare-styleable>
+</resources>

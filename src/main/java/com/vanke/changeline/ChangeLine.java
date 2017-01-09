@@ -1,6 +1,7 @@
 package com.vanke.changeline;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,12 +24,12 @@ public class ChangeLine extends ViewGroup {
 
     public ChangeLine(Context context, AttributeSet attrs) {
         super(context, attrs);
-//        init(context, attrs);
+        init(context, attrs);
     }
 
     public ChangeLine(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-//        init(context, attrs);
+        init(context, attrs);
     }
 
     @Override
@@ -41,10 +42,8 @@ public class ChangeLine extends ViewGroup {
      *  <declare-styleable name="direction">
         <attr name="direct" format="integer" />
         </declare-styleable>
-     * @param context
-     * @param attrs
      */
-    /*private void init(Context context, AttributeSet attrs)
+    private void init(Context context, AttributeSet attrs)
     {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.direction);
         int direct = ta.getInteger(R.styleable.direction_direct, -1);
@@ -53,7 +52,7 @@ public class ChangeLine extends ViewGroup {
         else
             orientation=RIGHT;
         ta.recycle();
-    }*/
+    }
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
