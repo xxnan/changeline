@@ -19,7 +19,7 @@ public class ChangeLine extends ViewGroup {
     private int orientation=RIGHT;
     public ChangeLine(Context context) {
         super(context);
-//        init(context, null);
+        init(context, null);
     }
 
     public ChangeLine(Context context, AttributeSet attrs) {
